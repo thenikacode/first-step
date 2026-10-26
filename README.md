@@ -2,11 +2,11 @@
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE) [![Follow @thenikacode on X](https://img.shields.io/badge/follow-%40thenikacode-000000?logo=x&logoColor=white)](https://x.com/thenikacode)
 
-**Give your agent a vague idea. It asks one useful question at a time, then hands you a small first step you can check.**
+**Give your agent a vague idea. It asks one question at a time, then hands you a small first step you can check.**
 
 ![A real First Step run in Claude Code on a made-up idea. You: I keep thinking about a small tool that turns my week of git commits into a short update I could post, but I don't know where to start. Claude asks one question: where would you post the update, and who reads it? It suggests your team, publicly, or just you. You answer: publicly, on X, short and plain. Claude gives the first step: try it by hand before building anything. Run git log for the past week, paste the output into an assistant with a short prompt for one post under 280 characters, then check whether you would post the draft as is or after a quick edit.](docs/first-step-dialog.png)
 
-First Step is a skill for Claude Code and Codex. Each turn, it asks the question whose answer would most change your first piece of work. It stops once it can name a small step and how you'll check it. In the run above it asked one question, then gave the first step ([full transcript](examples/weekly-commit-update.md)).
+First Step is a skill for Claude Code and Codex. Each turn, it asks the question whose answer would most change your first piece of work. In the run above it asked one question, then gave the first step ([full transcript](examples/weekly-commit-update.md)).
 
 ## Install
 
@@ -14,6 +14,12 @@ In Claude Code 2.1.275 or later:
 
 ```
 /plugin install first-step --marketplace thenikacode/first-step
+```
+
+Or from your terminal (tested with Claude Code 2.1.310):
+
+```
+claude plugin install first-step --marketplace thenikacode/first-step
 ```
 
 <details>
@@ -69,13 +75,13 @@ The skill is one Markdown file of instructions, [SKILL.md](skills/first-step/SKI
 
 - It has no memory between chats. Each run starts from the conversation you're in.
 - It doesn't promise that your plan or business will work.
-- Its instructions say that planning with it isn't permission to build, publish, buy or message anyone. The skill can't enforce that: your agent's own permissions decide what it can do.
+- Its instructions say that planning with it isn't permission to build, publish, buy or message anyone. The skill can't enforce that. You set what your agent can do in its own permission settings.
 - It isn't meant for a clear task, a small edit, a translation or a factual question.
 - Answers change from one model to another, and from one run to the next.
 
 ## Example
 
-[A week of commits into a post](examples/weekly-commit-update.md) is a real run in Claude Code 2.1.310 on 26 Oct 2026, unedited. The idea is made up. It took one question, then the first step and its check.
+[A week of commits into a post](examples/weekly-commit-update.md) is the full run from the image above, unedited: Claude Code 2.1.310, 26 Oct 2026, on a made-up idea.
 
 ## FAQ
 
@@ -89,7 +95,7 @@ Yes, a long one in a single file, so you can read all of it before you install i
 
 ## License
 
-MIT. Made by [Nika Code](https://github.com/thenikacode) with Claude Code and Codex. Contributions are welcome: see [CONTRIBUTING.md](CONTRIBUTING.md).
+MIT. Made by [Nika Code](https://github.com/thenikacode) with Claude Code and Codex. To contribute, see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 Follow the build on X: [@thenikacode](https://x.com/thenikacode).
 

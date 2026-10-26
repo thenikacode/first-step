@@ -14,7 +14,7 @@ First public release.
 
 - The `first-step` skill: one Markdown file of instructions. You give your agent a rough idea, it asks one question per turn, and it stops when it can name a small first step and a way to check it.
 - `agents/openai.yaml`, with the name, short description and default prompt that Codex shows.
-- A Claude Code plugin and a marketplace in this repository: `/plugin install first-step --marketplace thenikacode/first-step` in Claude Code 2.1.275 or later.
+- A Claude Code plugin and a marketplace in this repository: `/plugin install first-step --marketplace thenikacode/first-step` in Claude Code 2.1.275 or later. From your terminal: `claude plugin install first-step --marketplace thenikacode/first-step`.
 - Install with the skills CLI (`npx skills add thenikacode/first-step -g`), or copy `skills/first-step` into `~/.agents/skills/` for Codex.
 - A real run on a made-up idea, unedited, in `examples/weekly-commit-update.md`.
 
