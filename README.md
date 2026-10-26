@@ -6,7 +6,7 @@
 
 ![A real First Step run in Claude Code on a made-up idea. You: I keep thinking about a small tool that turns my week of git commits into a short update I could post, but I don't know where to start. Claude asks one question: where would you post the update, and who reads it? It suggests your team, publicly, or just you. You answer: publicly, on X, short and plain. Claude gives the first step: try it by hand before building anything. Run git log for the past week, paste the output into an assistant with a short prompt for one post under 280 characters, then check whether you would post the draft as is or after a quick edit.](docs/first-step-dialog.png)
 
-First Step is a skill for Claude Code and Codex. Each turn, it asks the question whose answer would most change your first piece of work. In the run above it asked one question, then gave the first step ([full transcript](examples/weekly-commit-update.md)).
+First Step is a skill for Claude Code and Codex. Each turn, it picks the one question that would change your first step the most. In the run above it asked one question, then gave the first step ([full transcript](examples/weekly-commit-update.md)).
 
 ## Install
 
