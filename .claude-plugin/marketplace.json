@@ -1,0 +1,14 @@
+{
+  "name": "first-step",
+  "description": "First Step, an agent skill by Nika Code.",
+  "owner": {
+    "name": "Nika Code"
+  },
+  "plugins": [
+    {
+      "name": "first-step",
+      "source": "./",
+      "description": "Turn a rough idea into a clear first step: one useful question at a time, then a small next step you can check."
+    }
+  ]
+}

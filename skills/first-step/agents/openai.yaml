@@ -1,0 +1,4 @@
+interface:
+  display_name: "First Step"
+  short_description: "Turn a rough idea into a clear first step"
+  default_prompt: "Use $first-step to clarify my idea with one useful question at a time, then define a small first step I can check."
